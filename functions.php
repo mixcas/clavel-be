@@ -20,3 +20,7 @@ function scripts_and_styles_method() {
   }
 }
 add_action('wp_enqueue_scripts', 'scripts_and_styles_method');
+
+get_template_part( 'lib/thumbnail-sizes' );
+get_template_part( 'lib/functions-misc' );
+get_template_part( 'lib/functions-utilities' );

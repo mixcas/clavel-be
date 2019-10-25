@@ -1,0 +1,141 @@
+@import '~destyle.css/';
+@import '~@idix/flexi/src/flexi';
+@import 'px2rem.scss';
+
+// COLORS
+$black: #000;
+$themeColor: #7396FFb3;
+
+// VARS
+$baseFontSize: 16;
+
+body {
+  font-size: 16px;
+  font-family: 'Georgia', serif;
+}
+// Utilities
+
+.text-align-center {
+  text-align: center;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+
+// BASIC
+h1 {
+  @include rem(font-size, 20px);
+  @include rem(margin-bottom, 3px);
+  padding-top: 0;
+  font-weight: bold;
+}
+
+// Components
+
+.navbar {
+  background: $black;
+  color: $themeColor;
+  @include rem(padding, 14px 0);
+  @include rem(font-size, 12px);
+}
+
+.navbar-item {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#main-content {
+  background: $themeColor;
+}
+
+.logo-container {
+  @include rem(margin-bottom, 58px);
+}
+
+.site-title {
+  @include rem(font-size, 64px);
+}
+
+.container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  &.no-gutter {
+    padding: 0;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.date {
+  @include rem(font-size, 12px);
+  @include rem(margin-bottom, 14px);
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.posts-list,
+.single article {
+  @include rem(padding-bottom, 60px);
+}
+
+.footer-about {
+  @include rem(margin-top, 12px);
+  @include rem(margin-bottom, 12px);
+
+  b {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+  }
+}
+
+.single {
+  article {
+    @include rem(padding-top, 20px);
+  }
+
+  h1 {
+    @include rem(font-size, 24px);
+  }
+
+  .featured-image {
+    @include rem(margin-bottom, 20px);
+  }
+
+  .post-content {
+    p {
+      @include rem(line-height, 22px);
+      @include rem(margin-bottom, 20px);
+    }
+
+    .wp-block-image {
+      img {
+        @include rem(margin, 0  0 10px);
+      }
+      figcaption {
+        @include rem(font-size, 13px);
+        @include rem(line-height, 17px);
+        @extend .font-playfair;
+        @include rem(margin, 0 20px 0);
+      }
+    }
+  }
+}
+
+// CATEGORY
+.category-title-container {
+  @include rem(padding-top, 14px);
+}
+
+.category-title {
+  @include rem(font-size, 48px);
+}

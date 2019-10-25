@@ -1,17 +1,18 @@
 <?php
+/*
+Template Name: Archives
+*/
 get_header();
 ?>
 <main id="main-content">
+  <div class="category-title-container container">
+    <h1 class="category-title">
 <?php
-if (is_front_page()) {
+echo single_cat_title();
 ?>
-  <div class="logo-container container grid">
-    <h1 class="site-title col-xs-12">CLAVEL</h1>
-    <img class="logo col-xs-9 col-xs-align-self--right" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png">
+
+    </h1>
   </div>
-<?php
-}
-?>
   <section id="posts" class="posts-list">
     <div class="container">
       <div class="grid">

@@ -10,6 +10,7 @@
   "author": "Carlos Solares",
   "license": "ISC",
   "devDependencies": {
+    "@idix/flexi": "^1.1.15",
     "babel-loader": "^8.0.6",
     "babel-preset-env": "^1.7.0",
     "css-loader": "^3.2.0",
@@ -24,6 +25,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.6.4",
-    "bulma": "^0.8.0"
+    "bulma": "^0.8.0",
+    "destyle.css": "^1.0.10"
   }
 }
