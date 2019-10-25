@@ -26,8 +26,15 @@ function wpb_imagelink_setup() {
 }
 add_action('admin_init', 'wpb_imagelink_setup', 10);
 
+function check_category_exists( $cat_name, $parent = null ) {
+  $id = term_exists( $cat_name, 'category', $parent );
+  if ( is_array( $id ) ) {
+    $id = $id['term_id'];
+  }
+  return $id;
+}
 function get_category_link_by_slug($slug) {
-  if (category_exists($slug)) {
+  if (check_category_exists($slug)) {
     $category = get_category_by_slug($slug);
     if ( ! is_object( $category ) ) {
       $category = (int) $category;
@@ -38,10 +45,3 @@ function get_category_link_by_slug($slug) {
   echo '#';
 }
 
-function category_exists( $cat_name, $parent = null ) {
-  $id = term_exists( $cat_name, 'category', $parent );
-  if ( is_array( $id ) ) {
-    $id = $id['term_id'];
-  }
-  return $id;
-}

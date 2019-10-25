@@ -5,9 +5,11 @@ get_header();
 <?php
 if (is_front_page()) {
 ?>
-  <div class="logo-container container grid">
-    <h1 class="site-title col-xs-12">CLAVEL</h1>
-    <img class="logo col-xs-9 col-xs-align-self--right" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png">
+  <div class="site-title-container container">
+    <h1 class="site-title">CLAVEL</h1>
+    <div class="logo-container">
+      <img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png">
+    </div>
   </div>
 <?php
 }

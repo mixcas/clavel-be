@@ -9,9 +9,10 @@ $themeColor: #7396FFb3;
 // VARS
 $baseFontSize: 16;
 
-body {
+html {
   font-size: 16px;
   font-family: 'Georgia', serif;
+  box-sizing: border-box;
 }
 // Utilities
 
@@ -31,6 +32,7 @@ body {
 // BASIC
 h1 {
   @include rem(font-size, 20px);
+  @include rem(margin-bottom, 3px);
   @include rem(margin-bottom, 3px);
   padding-top: 0;
   font-weight: bold;
@@ -54,12 +56,23 @@ h1 {
   background: $themeColor;
 }
 
-.logo-container {
+.site-title-container {
   @include rem(margin-bottom, 58px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .site-title {
+  flex: 100% 1 0;
   @include rem(font-size, 64px);
+  @include rem(line-height, 85px);
+  @include rem(margin, 10px 0 0);
+}
+
+.logo-container {
+  flex: auto 0 0;
+  max-widht: 66.6666666667%;
 }
 
 .container {
@@ -113,6 +126,7 @@ h1 {
 
   .post-content {
     p {
+      @include rem(font-size, 16px);
       @include rem(line-height, 22px);
       @include rem(margin-bottom, 20px);
     }
@@ -139,3 +153,8 @@ h1 {
 .category-title {
   @include rem(font-size, 48px);
 }
+
+// RESPONSIVE
+@import 'tablet-portrait.scss';
+@import 'tablet-landscape.scss';
+@import 'laptop.scss';
