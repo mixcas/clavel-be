@@ -36,4 +36,5 @@ debug_page_request();
 <section id="main-container">
 <?php
 get_template_part('partials/nav');
+get_template_part('partials/style');
 ?>

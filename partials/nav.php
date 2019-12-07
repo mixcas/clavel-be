@@ -17,7 +17,7 @@ if (!is_front_page()) {
       <div class="navbar-item col-xs-3">
         <a href="<?php get_category_link_by_slug('archivo'); ?>">Archivo</a>
       </div>
-      <div class="navbar-item col-xs-3 col-xs-align-self--right">
+      <div class="navbar-item col-xs-3 col-xs-align-self--right nosotras-link">
         <a href="">Nosotras</a>
       </div>
   </div>

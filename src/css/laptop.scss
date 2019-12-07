@@ -2,4 +2,56 @@
   html {
     font-size: 24px;
   }
+
+  .site-title-container {
+    padding: 21vh 0;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .title-logo-container {
+    flex: auto 1 1;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .title-logo {
+    width: 100%;
+  }
+
+  .logo-container {
+
+  }
+
+  .footer-about {
+    @include rem(margin, 48px 0);
+
+    p {
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 2rem;
+    }
+  }
+
+  .nosotras-link {
+    text-align: right;
+  }
+
+  .single .post-content p {
+    padding: 0 230px;
+    margin-bottom: 80px;
+  }
+
+  .wp-block-image {
+    margin-bottom: 60px;
+  }
+
+  .single h1 {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
 }

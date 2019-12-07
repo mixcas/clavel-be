@@ -7,8 +7,11 @@ if (is_front_page()) {
 ?>
   <div class="site-title-container container">
     <h1 class="site-title">CLAVEL</h1>
+    <div class="title-logo-container">
+      <img class="title-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/clavel-title.svg">
+    </div>
     <div class="logo-container">
-      <img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png">
+      <img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/clavel-logo.svg">
     </div>
   </div>
 <?php
