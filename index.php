@@ -27,7 +27,7 @@ if (have_posts()) {
     the_post();
 ?>
 
-        <article <?php post_class('col-xs-12'); ?> id="post-<?php the_ID(); ?>">
+        <article <?php post_class('col-xs-9'); ?> id="post-<?php the_ID(); ?>">
           <h1>
             <a class="font-playfair" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
             </h1>

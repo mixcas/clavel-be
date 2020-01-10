@@ -30,11 +30,13 @@
     @include rem(margin, 48px 0);
 
     p {
-      width: 75%;
-      margin-left: auto;
-      margin-right: auto;
       line-height: 2rem;
     }
+  }
+
+  .footer-links {
+    @include rem(margin-top, 48px);
+    @include rem(margin-bottom, 48px);
   }
 
   .nosotras-link {

@@ -124,6 +124,11 @@ h1 {
   }
 }
 
+.footer-links {
+  @include rem(margin-top, 12px);
+  @include rem(margin-bottom, 12px);
+}
+
 .single {
   article {
     @include rem(padding-top, 20px);

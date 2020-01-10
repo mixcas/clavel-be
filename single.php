@@ -21,7 +21,7 @@ if (have_posts()) {
             </div>
           </div>
         </div>
-        <div class="container no-gutter featured-image">
+        <div class="container featured-image">
 <?php
     the_post_thumbnail('gallery');
 ?>
