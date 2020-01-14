@@ -41,3 +41,42 @@ function debug_page_request() {
 	echo basename($template);
 	echo ' -->'.D4P_EOL;
 }
+
+
+
+function add_social_networks($wp_customize) {
+
+  $wp_customize->add_setting( 'twitter', array(
+    'default' => '',
+    'capability' => 'edit_theme_options'
+  ) );
+
+  $wp_customize->add_control( 'twitter', array(
+    'label' => 'Twitter (link)',
+    'section' => 'title_tagline',
+    'type' => 'text'
+  ) );
+
+  $wp_customize->add_setting( 'facebook', array(
+    'default' => '',
+    'capability' => 'edit_theme_options'
+  ) );
+
+  $wp_customize->add_control( 'facebook', array(
+    'label' => 'Facebook (link)',
+    'section' => 'title_tagline',
+    'type' => 'text'
+  ) );
+
+  $wp_customize->add_setting( 'instagram', array(
+    'default' => '',
+    'capability' => 'edit_theme_options'
+  ) );
+
+  $wp_customize->add_control( 'instagram', array(
+    'label' => 'Instagram (link)',
+    'section' => 'title_tagline',
+    'type' => 'text'
+  ) );
+}
+add_action('customize_register', 'add_social_networks');
