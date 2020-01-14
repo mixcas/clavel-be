@@ -34,16 +34,12 @@
     }
   }
 
-  .footer-links {
-    @include rem(margin-top, 48px);
-    @include rem(margin-bottom, 48px);
-  }
-
   .nosotras-link {
     text-align: right;
   }
 
-  .single .post-content p {
+  .single .post-content p,
+  .page .post-content p {
     padding: 0 230px;
     margin-bottom: 80px;
   }
@@ -52,7 +48,8 @@
     margin-bottom: 60px;
   }
 
-  .single h1 {
+  .single h1,
+  .page h1 {
     font-size: 4.5rem;
     line-height: 1;
   }

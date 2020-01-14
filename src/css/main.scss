@@ -38,6 +38,10 @@ h1 {
   font-weight: bold;
 }
 
+.hentry {
+  min-height: 80vh;
+}
+
 // Components
 
 .navbar {
@@ -110,7 +114,8 @@ h1 {
 }
 
 .posts-list,
-.single article {
+.single article,
+.page article {
   @include rem(padding-bottom, 60px);
 }
 
@@ -125,11 +130,12 @@ h1 {
 }
 
 .footer-links {
-  @include rem(margin-top, 12px);
-  @include rem(margin-bottom, 12px);
+  @include rem(padding, 14px 0);
+  @include rem(font-size, 12px);
 }
 
-.single {
+.single,
+.page {
   article {
     @include rem(padding-top, 20px);
   }

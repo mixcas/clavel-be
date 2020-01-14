@@ -17,8 +17,16 @@ if (!is_front_page()) {
       <div class="navbar-item col-xs-3">
         <a href="<?php get_category_link_by_slug('archivo'); ?>">Archivo</a>
       </div>
+<?php
+$nosotras_id = get_id_by_slug('nosotras');
+if (!empty($nosotras_id)) {
+  $nosotras_link = get_permalink($nosotras_id);
+?>
       <div class="navbar-item col-xs-3 col-xs-align-self--right nosotras-link">
-        <a href="">Nosotras</a>
+        <a href="<?php echo $nosotras_link; ?>">Nosotras</a>
       </div>
+<?php
+}
+?>
   </div>
 </nav>

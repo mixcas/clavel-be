@@ -2,15 +2,6 @@
 <?php
 get_template_part('partials/nav');
 ?>
-    <div class="footer-about">
-      <div class="grid container">
-        <div class="col-xs-9">
-<?php
-get_template_part('partials/about');
-?>
-        </div>
-      </div>
-    </div>
 <?php
 $facebook = get_theme_mod('facebook');
 $twitter = get_theme_mod('twitter');
